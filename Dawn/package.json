@@ -1,0 +1,20 @@
+{
+  "name": "dawn",
+  "version": "1.0.0",
+  "description": "Dawn - Local AI Coding Assistant (全自构建)",
+  "type": "module",
+  "main": "src/cli/index.ts",
+  "scripts": {
+    "dev": "bun run src/cli/index.ts",
+    "test": "bun test ../tests/",
+    "build": "bun build src/cli/index.ts --outdir ./dist"
+  },
+  "dependencies": {
+    "@dawn/core": "workspace:*",
+    "@dawn/memory": "workspace:*",
+    "@dawn/evolution": "workspace:*"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

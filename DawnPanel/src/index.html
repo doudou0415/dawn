@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawn Panel</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    #app {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    header {
+      padding: 12px 20px;
+      border-bottom: 1px solid #2a2a4a;
+      background: #16213e;
+    }
+    header h1 { font-size: 16px; font-weight: 600; }
+    main {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+    #sidebar {
+      width: 240px;
+      background: #0f3460;
+      padding: 12px;
+      overflow-y: auto;
+    }
+    #chat-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    #messages {
+      flex: 1;
+      padding: 16px 20px;
+      overflow-y: auto;
+    }
+    #input-area {
+      display: flex;
+      gap: 8px;
+      padding: 12px 20px;
+      border-top: 1px solid #2a2a4a;
+      background: #16213e;
+    }
+    #input-area input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #2a2a4a;
+      border-radius: 6px;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      font-size: 14px;
+      outline: none;
+    }
+    #input-area input:focus { border-color: #533483; }
+    #input-area button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      background: #533483;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    #input-area button:hover { background: #6a4c9a; }
+    .message { margin-bottom: 12px; }
+    .message-user { color: #7ec8e3; }
+    .message-dawn { color: #a8e6cf; }
+    .message-content {
+      margin-top: 4px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #16213e;
+      white-space: pre-wrap;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header><h1>Dawn Panel</h1></header>
+    <main>
+      <div id="sidebar">
+        <div style="font-size: 12px; color: #888; margin-bottom: 8px;">会话列表</div>
+        <div style="font-size: 12px; color: #666;">暂无历史会话</div>
+      </div>
+      <div id="chat-area">
+        <div id="messages"></div>
+        <div id="input-area">
+          <input type="text" id="input" placeholder="输入消息..." autofocus />
+          <button id="send-btn">发送</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="app.ts"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "dawn-panel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dawn Panel - 桌面客户端",
+  "type": "module",
+  "scripts": {
+    "dev": "bun src/app.ts",
+    "build": "bun build src/app.ts --outdir ./dist"
+  },
+  "dependencies": {}
+}

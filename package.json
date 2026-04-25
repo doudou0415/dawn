@@ -1,0 +1,11 @@
+{
+  "name": "dawn",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun src/new-main.ts",
+    "build": "echo 'build not configured yet'"
+  },
+  "dependencies": {}
+}
