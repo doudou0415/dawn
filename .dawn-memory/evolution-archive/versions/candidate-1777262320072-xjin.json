@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777262320072-xjin",
+  "parentVersionId": null,
+  "timestamp": "2026-04-27T03:58:40.072Z",
+  "description": "参数微调: 2026 → 1871; 参数微调: 58 → 57",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777262320072-xjin\",\"score\":65,\"description\":\"参数微调: 2026 → 1871; 参数微调: 58 → 57\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-27T03:58:40.072Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777262320066"
+  }
+}

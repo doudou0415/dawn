@@ -1,6 +1,7 @@
-import { writeFile, readFile, mkdir, exists } from 'fs/promises';
+import { writeFile, readFile, mkdir } from 'fs/promises';
+import { existsSync } from 'fs';
 import { join, dirname } from 'path';
-import { TaskAnalysis } from './selfEvolution.js';
+import { TaskAnalysis } from './SelfEvolutionEngine';
 
 interface Skill {
   id: string;
@@ -72,24 +73,6 @@ export class SkillGenerator {
           ],
           examples: [task.description]
         })
-      },
-      {
-        id: 'general-request',
-        name: '通用请求处理',
-        category: 'general',
-        pattern: /.*/,
-        generate: (task: TaskAnalysis) => ({
-          name: '通用请求处理',
-          description: '处理各种通用请求',
-          category: 'general',
-          tools: ['general_request'],
-          steps: [
-            '分析请求内容',
-            '提供相应的处理方案',
-            '返回处理结果'
-          ],
-          examples: [task.description]
-        })
       }
     ];
   }
@@ -100,8 +83,8 @@ export class SkillGenerator {
       return null;
     }
 
-    // 找到匹配的模板
-    const template = this.templates.find(t => t.pattern.test(task.description));
+    // 找到匹配的模板（排除通配模板，优先精确匹配）
+    const template = this.templates.find(t => t.pattern.test(task.description) && t.id !== 'general-request');
     if (!template) {
       return null;
     }
@@ -136,7 +119,7 @@ export class SkillGenerator {
   }
 
   async loadSkills(): Promise<Skill[]> {
-    if (!(await exists(this.skillsFile))) {
+    if (!existsSync(this.skillsFile)) {
       return [];
     }
 

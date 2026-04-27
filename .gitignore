@@ -1,6 +1,32 @@
-node_modules/
-dist/
-.Dawn/
-*.log
+# Runtime data
+DawnPanel/memory/
+DawnPanel/.dawn-memory/
+DawnPanel/target/
+
+# Environment
 .env
+.env.local
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+*.tsbuildinfo
+.Dawn/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test artifacts
+test_memory/
+
+# Logs
+*.log

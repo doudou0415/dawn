@@ -1,6 +1,7 @@
 import { ToolDefinition } from './ToolRegistry';
 import { readdir, readFile, stat } from 'node:fs/promises';
 import { join, relative } from 'node:path';
+import { logger } from '../utils/index.js';
 
 export const SearchTool: ToolDefinition = {
   name: 'search',
@@ -32,11 +33,12 @@ export const SearchTool: ToolDefinition = {
               const content = await readFile(fullPath, 'utf-8');
               const lines = content.split('\n');
               for (let i = 0; i < lines.length; i++) {
-                if (lines[i].toLowerCase().includes(pattern.toLowerCase())) {
+                const line = lines[i];
+                if (line && line.toLowerCase().includes(pattern.toLowerCase())) {
                   results.push({
                     file: relative(rootDir, fullPath),
                     line: i + 1,
-                    content: lines[i].trim(),
+                    content: line.trim(),
                   });
                   if (results.length >= maxResults) break;
                 }

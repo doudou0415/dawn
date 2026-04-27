@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777262432885-w4xs",
+  "parentVersionId": null,
+  "timestamp": "2026-04-27T04:00:32.885Z",
+  "description": "参数微调: 32 → 34",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777262432885-w4xs\",\"score\":65,\"description\":\"参数微调: 32 → 34\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-27T04:00:32.885Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777262432878"
+  }
+}

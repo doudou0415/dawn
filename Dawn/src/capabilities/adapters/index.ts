@@ -1,0 +1,3 @@
+// Adapters — Phase 2 后续填充
+// 计划：PlaywrightAdapter, PuppeteerAdapter, LocalFileAdapter, SSHAapter...
+export {};

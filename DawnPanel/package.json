@@ -2,11 +2,34 @@
   "name": "dawn-panel",
   "version": "1.0.0",
   "private": true,
-  "description": "Dawn Panel - 桌面客户端",
+  "description": "Dawn Panel — React + Zustand + TanStack Query",
   "type": "module",
   "scripts": {
-    "dev": "bun src/app.ts",
-    "build": "bun build src/app.ts --outdir ./dist"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "backend": "bun run src/backend.ts",
+    "start": "concurrently \"bun run backend\" \"vite\"",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "typecheck": "tsc --noEmit"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zustand": "^5.0.4",
+    "@tanstack/react-query": "^5.67.3",
+    "react-markdown": "^10.1.0",
+    "react-syntax-highlighter": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.2",
+    "concurrently": "^9.1.2"
+  }
 }

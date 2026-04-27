@@ -1,11 +1,37 @@
 {
   "name": "dawn",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Dawn - Self-Evolving AI Coding Agent (Monorepo)",
   "type": "module",
+  "workspaces": [
+    "Dawn",
+    "Dawn/packages/*",
+    "DawnPanel"
+  ],
   "scripts": {
-    "dev": "bun src/new-main.ts",
-    "build": "echo 'build not configured yet'"
+    "dev": "bun --cwd Dawn dev",
+    "build": "bun --cwd Dawn build",
+    "start": "bun --cwd Dawn start",
+    "test": "bun --cwd Dawn test",
+    "test:coverage": "bun --cwd Dawn test:coverage",
+    "typecheck": "bun --cwd Dawn typecheck",
+    "build:all": "bun --cwd Dawn build && bun --cwd DawnPanel build",
+    "release": "bun run build:all && bun run test",
+    "tauri:dev": "cd DawnPanel && bun run tauri dev",
+    "lint": "eslint 'Dawn/src/**/*.ts' 'DawnPanel/src/**/*.tsx'",
+    "lint:fix": "eslint --fix 'Dawn/src/**/*.ts' 'DawnPanel/src/**/*.tsx'",
+    "format": "prettier --write 'Dawn/src/**/*.ts' 'DawnPanel/src/**/*.{ts,tsx}'",
+    "format:check": "prettier --check 'Dawn/src/**/*.ts' 'DawnPanel/src/**/*.{ts,tsx}'",
+    "clean": "bun --cwd Dawn clean",
+    "ci": "bun install --frozen-lockfile"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "^6.0.3",
+    "@types/node": "^25.6.0",
+    "vitest": "^3.1.0",
+    "turbo": "^2.4.0"
+  }
 }

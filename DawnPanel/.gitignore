@@ -1,0 +1,25 @@
+# Runtime data - never commit
+memory/
+.dawn-memory/
+target/
+
+# Build artifacts
+dist/
+src-tauri/target/
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

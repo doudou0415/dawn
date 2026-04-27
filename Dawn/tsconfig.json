@@ -3,10 +3,13 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
+    "types": ["node", "bun-types"],
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
     "strict": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,6 +19,7 @@
     "sourceMap": true,
     "paths": {
       "@dawn/core": ["./packages/core/src"],
+      "@dawn/core/*": ["./packages/core/src/*"],
       "@dawn/memory": ["./packages/memory/src"],
       "@dawn/evolution": ["./packages/evolution/src"]
     }

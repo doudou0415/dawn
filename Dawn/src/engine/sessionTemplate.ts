@@ -1,4 +1,6 @@
 // 会话生命周期模板方法模式
+import { logger } from '../utils/index.js';
+
 export abstract class SessionTemplate {
   // 模板方法 - 定义会话生命周期骨架
   public runSession(): void {
@@ -36,53 +38,53 @@ export class StandardSession extends SessionTemplate {
 
   protected start(): void {
     this.sessionId = `session_${Date.now()}`
-    console.log(`开始会话: ${this.sessionId}`)
+    logger.info(`开始会话: ${this.sessionId}`)
   }
 
   protected process(): void {
-    console.log('处理用户输入...')
+    logger.info('处理用户输入...')
     // 实际处理逻辑
   }
 
   protected execute(): void {
-    console.log('执行任务...')
+    logger.info('执行任务...')
     // 实际执行逻辑
   }
 
   protected end(): void {
-    console.log(`结束会话: ${this.sessionId}`)
+    logger.info(`结束会话: ${this.sessionId}`)
   }
 
   protected cleanup(): void {
     this.resources = []
-    console.log('清理会话资源')
+    logger.info('清理会话资源')
   }
 
   protected beforeStart(): void {
-    console.log('会话开始前检查...')
+    logger.info('会话开始前检查...')
   }
 }
 
 // 快速会话实现（跳过某些步骤）
 export class QuickSession extends SessionTemplate {
   protected start(): void {
-    console.log('快速开始会话')
+    logger.info('快速开始会话')
   }
 
   protected process(): void {
-    console.log('简化处理输入')
+    logger.info('简化处理输入')
   }
 
   protected execute(): void {
-    console.log('快速执行任务')
+    logger.info('快速执行任务')
   }
 
   protected end(): void {
-    console.log('快速结束会话')
+    logger.info('快速结束会话')
   }
 
   protected cleanup(): void {
-    console.log('快速清理')
+    logger.info('快速清理')
   }
 }
 

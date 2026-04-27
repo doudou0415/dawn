@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777262331977-kcq2",
+  "parentVersionId": null,
+  "timestamp": "2026-04-27T03:58:51.977Z",
+  "description": "参数微调: 5000 → 5169; 参数微调: 971 → 989; 参数微调: 971 → 894; 添加变异标记注释",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777262331977-kcq2\",\"score\":65,\"description\":\"参数微调: 5000 → 5169; 参数微调: 971 → 989; 参数微调: 971 → 894; 添加变异标记注释\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-27T03:58:51.977Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777262331971"
+  }
+}

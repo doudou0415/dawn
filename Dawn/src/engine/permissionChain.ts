@@ -1,4 +1,75 @@
+// 移植自 Dawn 本体 src/types/permissions.ts 的核心权限类型
+// ============================================================================
+// Permission Modes（移植自 Dawn 本体）
+// ============================================================================
+
+/** 外部可设置的权限模式 */
+export const EXTERNAL_PERMISSION_MODES = [
+  'acceptEdits',
+  'bypassPermissions',
+  'default',
+  'dontAsk',
+  'plan',
+] as const
+
+export type ExternalPermissionMode = (typeof EXTERNAL_PERMISSION_MODES)[number]
+export type InternalPermissionMode = ExternalPermissionMode | 'auto' | 'bubble'
+export type PermissionMode = InternalPermissionMode
+
+export const INTERNAL_PERMISSION_MODES = [
+  ...EXTERNAL_PERMISSION_MODES,
+  'auto',
+  'bubble',
+] as const satisfies readonly PermissionMode[]
+
+/** 权限行为类型 */
+export type PermissionBehavior = 'allow' | 'deny' | 'ask'
+
+/** 权限规则来源 */
+export type PermissionRuleSource =
+  | 'userSettings'
+  | 'projectSettings'
+  | 'localSettings'
+  | 'flagSettings'
+  | 'policySettings'
+  | 'cliArg'
+  | 'default'
+
+/** 权限规则 */
+export interface PermissionRule {
+  id: string
+  mode: PermissionMode
+  behavior: PermissionBehavior
+  source: PermissionRuleSource
+  /** 可选的操作白名单，不设置则应用到所有 */
+  allowedActions?: string[]
+  /** 可选白名单路径前缀 */
+  allowedPaths?: string[]
+  /** 优先级（值越大优先级越高）*/
+  priority: number
+  createdAt: string
+}
+
+// ============================================================================
+// 权限等级系统（移植增强）
+// ============================================================================
+
+/** 用户权限等级 */
+export type PermissionLevel = 0 | 1 | 2 | 3 | 4 | 5
+
+/** 权限等级描述 */
+export const PERMISSION_LEVEL_LABELS: Record<PermissionLevel, string> = {
+  0: '无权限',
+  1: '只读',
+  2: '基础执行',
+  3: '标准操作',
+  4: '高级操作',
+  5: '完全控制',
+}
+
+// ============================================================================
 // 权限检查责任链模式
+// ============================================================================
 export interface PermissionHandler {
   setNext(handler: PermissionHandler): PermissionHandler
   handle(request: PermissionRequest): Promise<PermissionResult>
@@ -9,6 +80,10 @@ export interface PermissionRequest {
   resourceId: string
   action: string
   context?: Record<string, any>
+  /** @dawn 移植来自 Dawn 本体的权限等级支持 */
+  requiredLevel?: PermissionLevel
+  /** @dawn 权限模式 */
+  mode?: PermissionMode
 }
 
 export interface PermissionResult {
@@ -51,9 +126,34 @@ export class WhitelistHandler extends BasePermissionHandler {
 
 // 权限等级检查处理器
 export class PermissionLevelHandler extends BasePermissionHandler {
+  /** 当前用户等级 */
+  private userLevel: PermissionLevel
+
+  constructor(userLevel: PermissionLevel = 3) {
+    super()
+    this.userLevel = userLevel
+  }
+
+  /** 更新用户等级（例如从配置加载） */
+  setLevel(level: PermissionLevel): void {
+    this.userLevel = level
+  }
+
   protected async check(request: PermissionRequest): Promise<PermissionResult> {
-    // 检查用户权限等级
-    return { allowed: true }
+    const required = request.requiredLevel ?? 0
+
+    if (this.userLevel >= required) {
+      return {
+        allowed: true,
+        reason: `用户等级 ${this.userLevel} >= 所需等级 ${required}`,
+      }
+    }
+
+    // 不满足等级时，交给下一个处理器判定（例如超级管理员）
+    return {
+      allowed: false,
+      reason: `权限不足：当前等级 ${this.userLevel}，需要 ${required}`,
+    }
   }
 }
 
@@ -122,7 +222,8 @@ export class IPWhitelistHandler extends BasePermissionHandler {
     // 简化实现，实际应该使用IP地址库
     if (range.includes('/')) {
       // CIDR表示法
-      return ip.startsWith(range.split('/')[0].split('.').slice(0, 3).join('.'))
+      const parts = range.split('/')[0]?.split('.').slice(0, 3).join('.')
+      return parts ? ip.startsWith(parts) : false
     }
     return ip === range
   }
@@ -160,20 +261,26 @@ export class PermissionChainBuilder {
       throw new Error('至少需要一个处理器')
     }
 
-    let previous = this.handlers[0]
+    let previous: PermissionHandler = this.handlers[0]!
     for (let i = 1; i < this.handlers.length; i++) {
-      previous = previous.setNext(this.handlers[i])
+      const handler = this.handlers[i]
+      if (handler) {
+        previous = previous.setNext(handler)
+      }
     }
 
-    return this.handlers[0]
+    return this.handlers[0]!
   }
 }
 
 // 默认权限链工厂
-export function createDefaultPermissionChain(): PermissionHandler {
+export function createDefaultPermissionChain(
+  userLevel?: PermissionLevel,
+): PermissionHandler {
   return new PermissionChainBuilder()
     .addHandler(new SuperAdminHandler())
     .addHandler(new TimeRestrictionHandler())
+    .addHandler(new PermissionLevelHandler(userLevel))
     .addHandler(new IPWhitelistHandler())
     .addHandler(new RolePermissionHandler())
     .addHandler(new ResourceOwnerHandler())
@@ -206,6 +313,23 @@ export class PermissionService {
       context,
     })
     return result.allowed
+  }
+
+  /** 基于等级检查（从 Dawn 权限系统移植） */
+  async checkLevel(
+    userId: string,
+    resourceId: string,
+    action: string,
+    requiredLevel: PermissionLevel,
+    context?: Record<string, any>,
+  ): Promise<PermissionResult> {
+    return this.checkPermission({
+      userId,
+      resourceId,
+      action,
+      requiredLevel,
+      context,
+    })
   }
 }
 

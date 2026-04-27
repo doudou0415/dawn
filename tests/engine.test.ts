@@ -1,51 +1,67 @@
-/**
- * Dawn 核心引擎测试
- */
+import { describe, it, expect } from 'vitest';
+import { Agent } from '../Dawn/src/engine/index.js';
 
-import { IntentEngine } from '../Dawn/src/engine/IntentEngine';
-import { Orchestrator } from '../Dawn/src/engine/Orchestrator';
-import { EvolutionEngine } from '../Dawn/src/evolution/EvolutionEngine';
-import { ChatCapability } from '../Dawn/src/capabilities/ChatCapability';
+describe('Agent (Engine 核心)', () => {
+  it('应使用默认配置创建 Agent 实例', () => {
+    const agent = new Agent();
+    expect(agent).toBeInstanceOf(Agent);
+  });
 
-// IntentEngine 测试
-const intentEngine = new IntentEngine();
+  it('execute 应返回包含响应文本的 AgentResult', async () => {
+    const agent = new Agent({ enableMemory: false });
+    const result = await agent.execute('hello');
+    expect(result).toHaveProperty('response');
+    expect(typeof result.response).toBe('string');
+  });
 
-const chatResult = await intentEngine.analyze('你好');
-console.assert(chatResult.type === 'chat', `Expected chat, got ${chatResult.type}`);
-console.log('[PASS] IntentEngine: 问候意图识别');
+  it('应正确管理工具调用历史', () => {
+    const agent = new Agent();
+    expect(agent.getToolCallHistory()).toEqual([]);
+    agent.clearToolCallHistory();
+    expect(agent.getToolCallHistory()).toEqual([]);
+  });
 
-const fileResult = await intentEngine.analyze('读取 src/index.ts');
-console.assert(fileResult.type === 'file_operation', `Expected file_operation, got ${fileResult.type}`);
-console.log('[PASS] IntentEngine: 文件操作意图识别');
+  it('应能重置工具性能统计', () => {
+    const agent = new Agent();
+    agent.resetToolPerformance();
+    expect(agent.getToolPerformance()).toEqual([]);
+  });
 
-const searchResult = await intentEngine.analyze('搜索 TODO 关键词');
-console.assert(searchResult.type === 'web_search', `Expected web_search, got ${searchResult.type}`);
-console.log('[PASS] IntentEngine: 搜索意图识别');
+  it('应返回已使用的工具列表', () => {
+    const agent = new Agent();
+    expect(agent.getToolsUsed()).toEqual([]);
+  });
 
-// Orchestrator 测试
-const orchestrator = new Orchestrator({ debugMode: false });
-orchestrator.capabilityRegistry_.register(new ChatCapability());
+  it('情绪检测应正确识别简单文本', () => {
+    const agent = new Agent();
+    const result = agent.detectEmotion('hello world');
+    expect(result).toBeDefined();
+    expect(typeof result.emotion).toBe('string');
+    expect(typeof result.confidence).toBe('number');
+  });
 
-const result = await orchestrator.process('你好');
-console.assert(result.intent.type === 'chat', `Orchestrator expected chat, got ${result.intent.type}`);
-console.assert(result.result !== undefined, 'Orchestrator should produce a result');
-console.log('[PASS] Orchestrator: 完整处理流程');
+  it('应能管理实体记忆', () => {
+    const agent = new Agent();
+    agent.setMemoryEntity('username', 'dawn');
+    expect(agent.getMemoryEntity('username')).toBe('dawn');
+    expect(agent.getAllMemoryEntities().get('username')).toBe('dawn');
+    agent.clearMemoryEntity('username');
+    expect(agent.getMemoryEntity('username')).toBeUndefined();
+  });
 
-// EvolutionEngine 测试
-const evolution = new EvolutionEngine({ minObservations: 3, analysisIntervalMs: 0 });
+  it('应管理对话历史', () => {
+    const agent = new Agent();
+    expect(agent.getConversationHistory()).toEqual([]);
+    expect(agent.getLastNMessages(5)).toEqual([]);
+    agent.clearConversationHistory();
+    expect(agent.getConversationHistory()).toEqual([]);
+  });
 
-for (let i = 0; i < 5; i++) {
-  await evolution.observe({
-    intent: { type: 'chat', confidence: 0.9, rawInput: 'hello', params: {} },
-    startTime: Date.now(),
-    endTime: Date.now(),
-    iterations: 1,
-    result: { success: true },
-  } as never);
-}
-
-const stats = await evolution.getStats();
-console.assert(stats.totalObservations === 5, `Expected 5 observations, got ${stats.totalObservations}`);
-console.log('[PASS] EvolutionEngine: 观察与统计');
-
-console.log('\n所有测试通过！');
+  it('应返回对话状态信息', () => {
+    const agent = new Agent();
+    const state = agent.getCurrentDialogueState();
+    expect(state).toBeDefined();
+    expect(state.id).toBeDefined();
+    expect(agent.getDialogueHistory().length).toBeGreaterThanOrEqual(1);
+  });
+});

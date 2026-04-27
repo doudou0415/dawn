@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777262435853-z6p7",
+  "parentVersionId": null,
+  "timestamp": "2026-04-27T04:00:35.853Z",
+  "description": "顺序未调整",
+  "candidateType": "workflow",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777262435853-z6p7\",\"score\":65,\"description\":\"顺序未调整\",\"type\":\"workflow\",\"tags\":[\"optimization\",\"code_quality\",\"workflow\"],\"createdAt\":\"2026-04-27T04:00:35.853Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "workflow"
+  ],
+  "metadata": {
+    "taskId": "task-1777262435845"
+  }
+}

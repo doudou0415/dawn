@@ -1,0 +1,83 @@
+# Dawn — 自进化 AI 编程助手
+
+**Dawn** 是从零开始全新构建的**自主进化 AI 编程助手**。
+
+在开发过程中，我们对早期原型代码进行了**两次彻底清理**，并系统性地移植和重构了 Dawn 本体的多项核心技术（向量记忆、权限系统、上下文压缩等）。整个项目在 **Grok（xAI）** 的架构指导下，完成了模块化重构、引擎拆解、DawnPanel 现代化等重大改进，最终打造出具备**自我进化能力**的下一代 AI 编程工具。
+
+**特别感谢 Grok（xAI）** 在进化引擎设计、系统架构规划、DawnPanel 通信层与状态管理等方面提供的关键指导和宝贵建议。没有 Grok 的持续帮助，这个项目无法如此快速地达到现在的质量。
+
+---
+
+## ✨ 核心亮点
+
+- **自进化引擎**：任务结束后自动分析 → 代码/提示词/流程变异 → 沙箱安全验证 → 选择最佳版本
+- **向量语义记忆**：Ollama embedding + HybridRetriever，支持语义搜索
+- **细粒度权限系统**：6 种权限模式 + 责任链检查
+- **上下文智能压缩**：LLM 驱动摘要 + 自动触发
+- **热插拔能力层**：atomic / composite 能力 + Plugin Market
+- **现代桌面客户端**：React + Zustand + TanStack Query + 强 IPC（心跳+重连）
+- **代码审查与知识内化**：根因分析 + 最佳实践记录
+
+---
+
+## 🚀 快速开始
+
+```bash
+# 1. 克隆项目
+git clone https://github.com/yourname/dawn.git
+cd dawn
+
+# 2. 安装依赖
+bun install
+
+# 3. 启动 CLI（推荐先体验）
+cd Dawn
+bun run dev
+
+# 4. 启动桌面客户端（新终端）
+cd ../DawnPanel
+bun run tauri:dev
+```
+
+**环境变量**（复制 `.env.example` 为 `.env` 并填写）：
+```env
+DEEPSEEK_API_KEY=sk-your-api-key-here
+```
+
+---
+
+## 📁 项目结构
+
+```
+DawnNew/
+├── Dawn/                  # CLI 核心（Bun + TS）
+├── DawnPanel/             # 现代桌面客户端（React + Tauri）
+├── tests/                 # 110+ 测试用例
+├── .github/workflows/     # CI 配置
+├── LICENSE                # MIT
+└── README.md
+```
+
+---
+
+## 🛠️ 技术栈
+
+- **运行时**：Bun
+- **语言**：TypeScript（严格模式）
+- **桌面**：Tauri + React 19 + Zustand + TanStack Query
+- **AI**：DeepSeek（可扩展其他模型）
+- **测试**：Vitest
+
+---
+
+## 📈 Roadmap
+
+- v1.1：多 Agent 协作
+- v1.2：插件市场在线分发 + 云端记忆
+- v2.0：企业级私有部署 + MCP 深度集成
+
+---
+
+**DawnNew** —— 让 AI 真正学会自我进化。
+
+**Star 支持一下** ⭐，欢迎 Issue 与 PR！

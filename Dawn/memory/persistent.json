@@ -1,0 +1,261 @@
+[
+  {
+    "key": "pref_language",
+    "value": "TypeScript",
+    "metadata": {
+      "type": "user_preference",
+      "updatedAt": 1777130679208
+    },
+    "id": "persistent_1777130679208_rd92jz",
+    "timestamp": 1777130679208,
+    "type": "persistent"
+  },
+  {
+    "key": "pref_style",
+    "value": "函数式",
+    "metadata": {
+      "type": "user_preference",
+      "updatedAt": 1777130679213
+    },
+    "id": "persistent_1777130679217_tbnm3e",
+    "timestamp": 1777130679217,
+    "type": "persistent"
+  },
+  {
+    "key": "task_code_generation",
+    "value": {
+      "task": "写一个带 leading 和 trailing edge 的 TypeScript 防抖函数",
+      "category": "code_generation",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-25T15:24:39.225Z"
+    },
+    "metadata": {
+      "confidence": 0.85,
+      "generatedCode": "/**\n * 创建一个带 leading 和 trailing edge 的防抖函数。\n *\n * @param fn - 要防抖的函数\n * @param delay - 防抖延迟（毫秒）\n * @param options - 可选配置\n * @param options.leading - 是否在延迟开始前立即执行（默认 false）\n * @param options.trailing - 是否在延迟结束后执行（默认 true）\n * @returns 防抖后的函数（附带 cancel 和 flush 方法）\n */\nfunction debounce<T extends (...args: any[]) => any>(\n  fn: T,\n  delay: number,\n  options: { leading?: boolean; trailing?: boolean } = {}\n): {\n  (...args: Parameters<T>): void;\n  cancel: () => void;\n  flush: () => void;\n} {\n  const { "
+    },
+    "id": "persistent_1777130679227_ywdqg2",
+    "timestamp": 1777130679227,
+    "type": "persistent"
+  },
+  {
+    "key": "task_code_generation",
+    "value": {
+      "task": "写一个 TypeScript 节流函数",
+      "category": "code_generation",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-25T15:24:39.229Z"
+    },
+    "metadata": {
+      "confidence": 0.85,
+      "generatedCode": "function throttle<T extends (...args: any[]) => any>(\n  fn: T,\n  limit: number\n): (...args: Parameters<T>) => void {\n  let inThrottle: boolean = false;\n  return (...args: Parameters<T>) => {\n    if (!inThrottle) {\n      fn(...args);\n      inThrottle = true;\n      setTimeout(() => (inThrottle = false), limit);\n    }\n  };\n}"
+    },
+    "id": "persistent_1777130679229_amku3f",
+    "timestamp": 1777130679229,
+    "type": "persistent"
+  },
+  {
+    "key": "pref_language",
+    "value": "TypeScript",
+    "metadata": {
+      "type": "user_preference",
+      "updatedAt": 1777130698221
+    },
+    "id": "persistent_1777130698228_op184z",
+    "timestamp": 1777130698228,
+    "type": "persistent"
+  },
+  {
+    "key": "pref_style",
+    "value": "函数式",
+    "metadata": {
+      "type": "user_preference",
+      "updatedAt": 1777130698232
+    },
+    "id": "persistent_1777130698232_ulwufv",
+    "timestamp": 1777130698232,
+    "type": "persistent"
+  },
+  {
+    "key": "pref_framework",
+    "value": "React",
+    "metadata": {
+      "type": "user_preference",
+      "updatedAt": 1777130698232
+    },
+    "id": "persistent_1777130698232_451wlw",
+    "timestamp": 1777130698232,
+    "type": "persistent"
+  },
+  {
+    "key": "task_code_generation",
+    "value": {
+      "task": "写一个带 leading 和 trailing edge 的 TypeScript 防抖函数",
+      "category": "code_generation",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-25T15:24:58.239Z"
+    },
+    "metadata": {
+      "confidence": 0.85,
+      "generatedCode": "/**\n * 创建一个带 leading 和 trailing edge 的防抖函数。\n *\n * @param fn - 要防抖的函数\n * @param delay - 防抖延迟（毫秒）\n * @param options - 可选配置\n * @param options.leading - 是否在延迟开始前立即执行（默认 false）\n * @param options.trailing - 是否在延迟结束后执行（默认 true）\n * @returns 防抖后的函数（附带 cancel 和 flush 方法）\n */\nfunction debounce<T extends (...args: any[]) => any>(\n  fn: T,\n  delay: number,\n  options: { leading?: boolean; trailing?: boolean } = {}\n): {\n  (...args: Parameters<T>): void;\n  cancel: () => void;\n  flush: () => void;\n} {\n  const { "
+    },
+    "id": "persistent_1777130698240_sxzbew",
+    "timestamp": 1777130698240,
+    "type": "persistent"
+  },
+  {
+    "key": "task_code_generation",
+    "value": {
+      "task": "写一个 TypeScript 节流函数",
+      "category": "code_generation",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-25T15:24:58.241Z"
+    },
+    "metadata": {
+      "confidence": 0.85,
+      "generatedCode": "function throttle<T extends (...args: any[]) => any>(\n  fn: T,\n  limit: number\n): (...args: Parameters<T>) => void {\n  let inThrottle: boolean = false;\n  return (...args: Parameters<T>) => {\n    if (!inThrottle) {\n      fn(...args);\n      inThrottle = true;\n      setTimeout(() => (inThrottle = false), limit);\n    }\n  };\n}"
+    },
+    "id": "persistent_1777130698241_k882mm",
+    "timestamp": 1777130698241,
+    "type": "persistent"
+  },
+  {
+    "key": "task_code_generation",
+    "value": {
+      "task": "帮我写一个深拷贝函数",
+      "category": "code_generation",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-25T15:24:58.244Z"
+    },
+    "metadata": {
+      "confidence": 0.85,
+      "generatedCode": "function deepClone<T>(obj: T): T {\n  if (obj === null || typeof obj !== 'object') {\n    return obj;\n  }\n  if (obj instanceof Date) {\n    return new Date(obj.getTime()) as T;\n  }\n  if (obj instanceof Array) {\n    return obj.map(item => deepClone(item)) as T;\n  }\n  if (obj instanceof Object) {\n    const cloned: Record<string, unknown> = {};\n    for (const key in obj) {\n      if (Object.prototype.hasOwnProperty.call(obj, key)) {\n        cloned[key] = deepClone((obj as Record<string, unknown>)[key])"
+    },
+    "id": "persistent_1777130698244_p0focy",
+    "timestamp": 1777130698244,
+    "type": "persistent"
+  },
+  {
+    "key": "task_general",
+    "value": {
+      "task": "cd D:\\AI\\DawnNew\\Dawn",
+      "category": "general",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-26T05:38:03.662Z"
+    },
+    "metadata": {
+      "confidence": 0.95,
+      "generatedCode": ""
+    },
+    "id": "persistent_1777181883669_i7a6p4",
+    "timestamp": 1777181883669,
+    "type": "persistent"
+  },
+  {
+    "key": "task_general",
+    "value": {
+      "task": "bun src/cli/index.ts",
+      "category": "general",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-26T05:38:05.499Z"
+    },
+    "metadata": {
+      "confidence": 0.95,
+      "generatedCode": ""
+    },
+    "id": "persistent_1777181885505_zr9tx0",
+    "timestamp": 1777181885505,
+    "type": "persistent"
+  },
+  {
+    "key": "task_general",
+    "value": {
+      "task": "你好",
+      "category": "general",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-26T05:38:13.312Z"
+    },
+    "metadata": {
+      "confidence": 0.95,
+      "generatedCode": ""
+    },
+    "id": "persistent_1777181893321_05b1o2",
+    "timestamp": 1777181893321,
+    "type": "persistent"
+  },
+  {
+    "key": "task_general",
+    "value": {
+      "task": "cd D:\\AI\\DawnNew\\Dawn",
+      "category": "general",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-26T05:39:45.324Z"
+    },
+    "metadata": {
+      "confidence": 0.95,
+      "generatedCode": ""
+    },
+    "id": "persistent_1777181985329_totkxw",
+    "timestamp": 1777181985329,
+    "type": "persistent"
+  },
+  {
+    "key": "task_general",
+    "value": {
+      "task": "bun src/cli/index.ts",
+      "category": "general",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-26T05:39:47.838Z"
+    },
+    "metadata": {
+      "confidence": 0.95,
+      "generatedCode": ""
+    },
+    "id": "persistent_1777181987847_uv2q1j",
+    "timestamp": 1777181987847,
+    "type": "persistent"
+  },
+  {
+    "key": "task_general",
+    "value": {
+      "task": "# 查看 BashTool.ts 第 35-50 行",
+      "category": "general",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-26T05:40:50.361Z"
+    },
+    "metadata": {
+      "confidence": 0.95,
+      "generatedCode": ""
+    },
+    "id": "persistent_1777182050370_48x6r8",
+    "timestamp": 1777182050370,
+    "type": "persistent"
+  },
+  {
+    "key": "task_general",
+    "value": {
+      "task": "# 查找所有 BashTool 文件sed -n '35,50p' D:\\AI\\DawnNew\\Dawn\\src\\tools\\BashTool.ts",
+      "category": "general",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-26T05:41:18.101Z"
+    },
+    "metadata": {
+      "confidence": 0.95,
+      "generatedCode": ""
+    },
+    "id": "persistent_1777182078108_13dzgv",
+    "timestamp": 1777182078108,
+    "type": "persistent"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "dawn",
+      "dependencies": {
+        "@dawn/core": "workspace:*",
+        "@dawn/evolution": "workspace:*",
+        "@dawn/memory": "workspace:*",
+        "typescript": "^6.0.3",
+      },
+    },
+    "packages/core": {
+      "name": "@dawn/core",
+      "version": "1.0.0",
+    },
+    "packages/evolution": {
+      "name": "@dawn/evolution",
+      "version": "1.0.0",
+    },
+    "packages/memory": {
+      "name": "@dawn/memory",
+      "version": "1.0.0",
+    },
+  },
+  "packages": {
+    "@dawn/core": ["@dawn/core@workspace:packages/core"],
+
+    "@dawn/evolution": ["@dawn/evolution@workspace:packages/evolution"],
+
+    "@dawn/memory": ["@dawn/memory@workspace:packages/memory"],
+
+    "typescript": ["typescript@6.0.3", "https://registry.npmmirror.com/typescript/-/typescript-6.0.3.tgz", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="],
+  }
+}

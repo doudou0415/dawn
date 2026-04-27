@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777262495220-hp9n",
+  "parentVersionId": null,
+  "timestamp": "2026-04-27T04:01:35.220Z",
+  "description": "参数微调: 1 → 1",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777262495220-hp9n\",\"score\":65,\"description\":\"参数微调: 1 → 1\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-27T04:01:35.220Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777262495213"
+  }
+}
