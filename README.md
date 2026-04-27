@@ -4,7 +4,7 @@
 
 在开发过程中，我们对早期原型代码进行了**两次彻底清理**，并系统性地移植和重构了 Dawn 本体的多项核心技术（向量记忆、权限系统、上下文压缩等）。整个项目在 **Grok（xAI）** 的架构指导下，完成了模块化重构、引擎拆解、DawnPanel 现代化等重大改进，最终打造出具备**自我进化能力**的下一代 AI 编程工具。
 
-**特别感谢 Grok（xAI）** 在进化引擎设计、系统架构规划、DawnPanel 通信层与状态管理等方面提供的关键指导和宝贵建议。没有 Grok 的持续帮助，这个项目无法如此快速地达到现在的质量。
+**特别感谢 Grok（xAI）** 在进化引擎设计、系统架构规划、DawnPanel 通信层与状态管理等方面提供的关键指导和宝贵建议。
 
 ---
 
@@ -24,7 +24,7 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/yourname/dawn.git
+git clone https://github.com/doudou0415/dawn.git
 cd dawn
 
 # 2. 安装依赖
@@ -40,6 +40,7 @@ bun run tauri:dev
 ```
 
 **环境变量**（复制 `.env.example` 为 `.env` 并填写）：
+
 ```env
 DEEPSEEK_API_KEY=sk-your-api-key-here
 ```
@@ -84,7 +85,7 @@ DawnNew/
 
 ---
 
-### 📜 授权与商用说明
+## 📜 授权与商用说明
 
 - 本项目采用 **MIT License** 完全开源。
 - **允许个人和商业使用**，包括修改、二次开发、集成到商业产品中、分发等。
