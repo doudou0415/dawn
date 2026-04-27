@@ -35,14 +35,32 @@ cd Dawn
 bun run dev
 
 # 4. 启动桌面客户端（可选，新开一个终端）
-cd ../DawnPanel   # 回到 dawn 目录，进入 DawnPanel
+cd ../DawnPanel    # 回到 dawn 目录，进入 DawnPanel
 bun run tauri:dev
-```
+环境变量（复制 .env.example 为 .env 并填写）：
 
-**环境变量（复制 .env.example 为 .env 并填写）：
-
+text
 DEEPSEEK_API_KEY=sk-your-api-key-here
-```
+📄 授权与商用说明
+本项目采用 MIT License，完全开源
+
+允许个人和商业使用，包括修改、二次开发、集成到商业产品中、分发等
+
+你可以免费使用 Dawn 核心功能，也可以基于它开发自己的产品或服务
+
+我们同时提供 Dawn Pro 付费订阅版（云端向量记忆、高级插件市场、优先计算资源、企业支持等），Pro 版为增值服务
+
+商用时无需额外授权，但请保留原作者署名和 MIT License 声明
+
+如果 Dawn 帮助到了你：
+
+给项目点个 Star ⭐️，让更多人发现它
+
+提 Issue 或 PR，一起让它更好
+
+分享给需要的朋友
+
+你的支持是开源最大的动力 ❤️
 
 ---
 
@@ -96,10 +114,3 @@ DawnNew/
 
 -商用时无需额外授权，但请保留原作者署名和 MIT License 声明
 
--如果 Dawn 帮助到了你：
-
--给项目点个 Star ⭐，让更多人发现它
-
--提 Issue 或 PR，一起让它更好
-
--分享给需要的朋友
