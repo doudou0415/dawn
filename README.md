@@ -24,7 +24,7 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/yourname/dawn.git
+git clone https://github.com/doudou0415/dawn.git
 cd dawn
 
 # 2. 安装依赖
