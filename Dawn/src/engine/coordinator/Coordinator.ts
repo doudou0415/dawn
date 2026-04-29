@@ -1,10 +1,13 @@
-import { getLogger } from '@dawn/core';
-const logger = getLogger('Coordinator');
-import { Container } from '@dawn/core';
+import { getLogger, Container } from '@dawn/core';
+import { getLLMProvider } from '@dawn/core';
+import type { LLMProvider } from '@dawn/core';
+import type { AgentConfig, AgentResult } from '@dawn/core';
 import { Agent } from '../core/Agent.js';
 import { SelfEvolutionEngine } from '../../evolution/SelfEvolutionEngine.js';
 import type { ImprovementSuggestion } from '../../evolution/SelfEvolutionEngine.js';
-import type { AgentConfig, AgentResult } from '@dawn/core';
+import { ContextService } from '../core/ContextService.js';
+
+const logger = getLogger('Coordinator');
 
 export interface ExecutionStats {
   total: number;
@@ -16,8 +19,10 @@ export interface ExecutionStats {
 export class Coordinator {
   private agent: Agent;
   private stats: ExecutionStats = { total: 0, success: 0, failed: 0, avgDurationMs: 0 };
+  private contextService: ContextService;
 
   constructor(config?: AgentConfig) {
+    this.contextService = new ContextService(config?.memoryBasePath);
     if (Container.has('agent')) {
       this.agent = Container.get<Agent>('agent');
     } else {
@@ -30,7 +35,12 @@ export class Coordinator {
     logger.info(`[Coordinator] Executing: ${input.slice(0, 80)}...`);
     const start = Date.now();
     try {
-      const result = await this.agent.execute(input, contextCode);
+      // 通过 ContextService 解析 @file / @folder / @git 引用，注入增强上下文
+      const llmCtx = await this.contextService.buildLLMContext(input);
+      const augmentedInput = llmCtx.atReferences
+        ? `${input}\n\n--- 上下文注入 ---\n${llmCtx.atReferences}\n--- 上下文注入结束 ---`
+        : input;
+      const result = await this.agent.execute(augmentedInput, contextCode);
       logger.info(`[Coordinator] Done (${result.response.length} chars)`);
       this.recordSuccess(Date.now() - start);
       // 自进化：任务结束后自动触发进化分析（异步，不阻塞主流程）
@@ -110,6 +120,11 @@ export class Coordinator {
       config: engine.getConfig(),
       suggestions: engine.getAllSuggestions().slice(-10),
     };
+  }
+
+  /** 获取当前 LLM Provider（抽象层） */
+  getLLMProvider(): LLMProvider {
+    return getLLMProvider();
   }
 
   /** 开启/关闭自动进化 */

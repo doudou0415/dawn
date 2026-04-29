@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426789163-z8hz",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:39:49.163Z",
+  "description": "参数微调: 39 → 42; 参数微调: 160 → 172; 参数微调: 49 → 50",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426789163-z8hz\",\"score\":65,\"description\":\"参数微调: 39 → 42; 参数微调: 160 → 172; 参数微调: 49 → 50\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:39:49.163Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426789160"
+  }
+}

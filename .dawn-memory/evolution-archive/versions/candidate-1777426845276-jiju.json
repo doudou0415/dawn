@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426845276-jiju",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:40:45.276Z",
+  "description": "参数微调: 5000 → 4719; 参数微调: 2026 → 1956; 参数微调: 40 → 42",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426845276-jiju\",\"score\":65,\"description\":\"参数微调: 5000 → 4719; 参数微调: 2026 → 1956; 参数微调: 40 → 42\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:40:45.276Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426845270"
+  }
+}
