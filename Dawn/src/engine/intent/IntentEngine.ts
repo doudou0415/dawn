@@ -9,8 +9,8 @@
  * 向后兼容：保留原 `IntentEngine.ts` 的全部导出函数。
  */
 
-import { TaskCategory } from '../../../packages/core/src/types.js';
-import type { IntentResult } from '../../../packages/core/src/types.js';
+import { TaskCategory } from '@dawn/core';
+import type { IntentResult } from '@dawn/core';
 import type { Intent } from './Intent.js';
 
 // ── 可选的 LLM 分析函数签名 ──
@@ -217,6 +217,6 @@ export function looksLikeToolTask(input: string): boolean {
   return _engine.looksLikeToolTask(input);
 }
 
-export async function analyzeIntent(input: string): Promise<import('../../../packages/core/src/types.js').IntentResult> {
+export async function analyzeIntent(input: string): Promise<import('@dawn/core').IntentResult> {
   return _engine.analyze(input);
 }

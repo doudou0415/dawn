@@ -6,8 +6,9 @@
  */
 
 import { Coordinator as Orchestrator } from './engine/coordinator/Coordinator.js';
-import type { OrchestratorConfig } from '../packages/core/src/types.js';
-import { logger } from './utils/index.js';
+import type { OrchestratorConfig } from '@dawn/core';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('Main');
 
 function checkApiKey(): void {
   const key = (typeof Bun !== 'undefined' ? Bun.env.DEEPSEEK_API_KEY : '') || process.env.DEEPSEEK_API_KEY || '';

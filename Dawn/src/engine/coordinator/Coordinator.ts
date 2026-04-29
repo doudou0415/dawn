@@ -1,9 +1,10 @@
-import type { AgentConfig, AgentResult } from '../../../packages/core/src/types.js';
-import { Container } from '../../../packages/core/src/Container.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('Coordinator');
+import { Container } from '@dawn/core';
 import { Agent } from '../core/Agent.js';
 import { SelfEvolutionEngine } from '../../evolution/SelfEvolutionEngine.js';
 import type { ImprovementSuggestion } from '../../evolution/SelfEvolutionEngine.js';
-import { logger } from '../../utils/index.js';
+import type { AgentConfig, AgentResult } from '@dawn/core';
 
 export interface ExecutionStats {
   total: number;

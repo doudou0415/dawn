@@ -1,0 +1,20 @@
+[
+  {
+    "key": "task_general",
+    "value": {
+      "task": "任务3",
+      "category": "general",
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-04-29T01:37:32.972Z"
+    },
+    "metadata": {
+      "confidence": 0.95,
+      "generatedCode": ""
+    },
+    "accessCount": 0,
+    "lastAccessed": 1777426652972,
+    "id": "1777426652973_ivzgc7",
+    "timestamp": 1777426652973
+  }
+]

@@ -1,11 +1,11 @@
 import crypto from 'node:crypto';
 
+import { DialogueStateType } from '@dawn/core';
 import type {
   ConversationContext,
   ConversationMessage,
   DialogueState,
-} from '../../../packages/core/src/types.js';
-import { DialogueStateType } from '../../../packages/core/src/types.js';
+} from '@dawn/core';
 import type { MemorySystem } from '../../memory/MemorySystem.js';
 
 // ====================================================================

@@ -5,7 +5,8 @@
  * 可在 Coordinator 初始化时加载配置中的 MCP 服务器。
  */
 
-import { logger } from '../../utils/index.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('MCPManager');
 import { MCPClient } from './client.js';
 import type {
   MCPServerConfig,

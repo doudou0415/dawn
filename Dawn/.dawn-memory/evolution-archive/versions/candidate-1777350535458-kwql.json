@@ -1,0 +1,21 @@
+{
+  "versionId": "candidate-1777350535458-kwql",
+  "parentVersionId": null,
+  "timestamp": "2026-04-28T04:28:55.458Z",
+  "description": "顺序未调整",
+  "candidateType": "workflow",
+  "sourcePath": "P0.5 重构：移除Coordinator switch分叉，新建CodeGenerationCapability/TerminalCapability，统一IntentEngine→CapabilityRegistry单一管道",
+  "content": "{\"id\":\"candidate-1777350535458-kwql\",\"score\":65,\"description\":\"顺序未调整\",\"type\":\"workflow\",\"tags\":[\"P0.5\",\"重构\",\"CapabilityRegistry\",\"单一管道\",\"CodeGeneration\",\"workflow\"],\"createdAt\":\"2026-04-28T04:28:55.458Z\"}",
+  "score": 65,
+  "tags": [
+    "P0.5",
+    "重构",
+    "CapabilityRegistry",
+    "单一管道",
+    "CodeGeneration",
+    "workflow"
+  ],
+  "metadata": {
+    "taskId": "p0.5-refactoring-001"
+  }
+}

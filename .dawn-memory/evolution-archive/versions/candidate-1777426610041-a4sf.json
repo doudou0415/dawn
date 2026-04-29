@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426610041-a4sf",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:36:50.041Z",
+  "description": "参数微调: 36 → 33; 参数微调: 36 → 37; 参数微调: 50 → 53",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426610041-a4sf\",\"score\":65,\"description\":\"参数微调: 36 → 33; 参数微调: 36 → 37; 参数微调: 50 → 53\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:36:50.041Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426610036"
+  }
+}

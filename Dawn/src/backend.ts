@@ -7,7 +7,8 @@
 import { Coordinator } from './engine/coordinator/Coordinator.js';
 import { ToolRegistry } from './tools/ToolRegistry.js';
 import { ReadTool, WriteTool } from './tools/index.js';
-import { logger } from './utils/index.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('Backend');
 
 export interface BackendOptions {
   memoryBasePath?: string;

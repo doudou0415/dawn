@@ -47,6 +47,7 @@ export function formatDuration(ms: number): string {
 }
 
 // ── 日志系统 ──
+// @deprecated 请使用 @dawn/core 的 getLogger 替代
 
 export type LogLevel = 'debug' | 'info' | 'warn' | 'error';
 
@@ -89,6 +90,7 @@ function writeLog(level: LogLevel, message: string, details?: unknown): void {
   }
 }
 
+/** @deprecated 请使用 @dawn/core 的 getLogger 替代 */
 export const logger = {
   debug: (msg: string, details?: unknown) => writeLog('debug', msg, details),
   info: (msg: string, details?: unknown) => writeLog('info', msg, details),

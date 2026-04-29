@@ -8,9 +8,9 @@
  * - 支持重要性评分维护（老化衰减 + 访问提升）
  */
 
+import { getLogger } from '@dawn/core';
+const logger = getLogger('PersistentMemory');
 import { JsonFileStore, type StoredEntry } from '../../store/MemoryStore.js';
-import { calculateImportance } from '../../compressor/ForgettingStrategy.js';
-import { logger } from '../../../utils/index.js';
 
 export interface EmbeddingResult {
   vector: number[];

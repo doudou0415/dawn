@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426506852-ifud",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:35:06.852Z",
+  "description": "参数微调: 6 → 6; 参数微调: 850 → 798",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426506852-ifud\",\"score\":65,\"description\":\"参数微调: 6 → 6; 参数微调: 850 → 798\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:35:06.852Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426506850"
+  }
+}

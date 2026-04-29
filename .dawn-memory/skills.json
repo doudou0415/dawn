@@ -2396,5 +2396,2425 @@
     "createdAt": "2026-04-27T04:05:08.186Z",
     "updatedAt": "2026-04-27T04:05:08.186Z",
     "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179139-i8yekvaux",
+    "createdAt": "2026-04-29T01:29:39.139Z",
+    "updatedAt": "2026-04-29T01:29:39.139Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179145-hcagmlrwq",
+    "createdAt": "2026-04-29T01:29:39.145Z",
+    "updatedAt": "2026-04-29T01:29:39.145Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179148-nzr5xoyn9",
+    "createdAt": "2026-04-29T01:29:39.148Z",
+    "updatedAt": "2026-04-29T01:29:39.148Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179151-i9993e0i7",
+    "createdAt": "2026-04-29T01:29:39.151Z",
+    "updatedAt": "2026-04-29T01:29:39.151Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179153-1edrj86vw",
+    "createdAt": "2026-04-29T01:29:39.153Z",
+    "updatedAt": "2026-04-29T01:29:39.153Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179155-cei9q6zm4",
+    "createdAt": "2026-04-29T01:29:39.155Z",
+    "updatedAt": "2026-04-29T01:29:39.155Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179165-4goyl3vjf",
+    "createdAt": "2026-04-29T01:29:39.165Z",
+    "updatedAt": "2026-04-29T01:29:39.165Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179168-wb73w557p",
+    "createdAt": "2026-04-29T01:29:39.168Z",
+    "updatedAt": "2026-04-29T01:29:39.168Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179172-i1dsxi5ed",
+    "createdAt": "2026-04-29T01:29:39.172Z",
+    "updatedAt": "2026-04-29T01:29:39.172Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426179176-jfpihlnb0",
+    "createdAt": "2026-04-29T01:29:39.176Z",
+    "updatedAt": "2026-04-29T01:29:39.176Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426244988-n38ewum57",
+    "createdAt": "2026-04-29T01:30:44.988Z",
+    "updatedAt": "2026-04-29T01:30:44.988Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426244993-29u0c8xjl",
+    "createdAt": "2026-04-29T01:30:44.993Z",
+    "updatedAt": "2026-04-29T01:30:44.993Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426244995-1l74gck22",
+    "createdAt": "2026-04-29T01:30:44.995Z",
+    "updatedAt": "2026-04-29T01:30:44.995Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426244996-c9jgk1b4u",
+    "createdAt": "2026-04-29T01:30:44.996Z",
+    "updatedAt": "2026-04-29T01:30:44.996Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426244998-1tea2pvin",
+    "createdAt": "2026-04-29T01:30:44.998Z",
+    "updatedAt": "2026-04-29T01:30:44.998Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426245000-dihyxi49d",
+    "createdAt": "2026-04-29T01:30:45.000Z",
+    "updatedAt": "2026-04-29T01:30:45.000Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426245008-36mo7e79n",
+    "createdAt": "2026-04-29T01:30:45.008Z",
+    "updatedAt": "2026-04-29T01:30:45.008Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426245011-rwgvj8eh2",
+    "createdAt": "2026-04-29T01:30:45.011Z",
+    "updatedAt": "2026-04-29T01:30:45.011Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426245015-mdqemdgdr",
+    "createdAt": "2026-04-29T01:30:45.015Z",
+    "updatedAt": "2026-04-29T01:30:45.015Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426245020-yl2zuinrb",
+    "createdAt": "2026-04-29T01:30:45.020Z",
+    "updatedAt": "2026-04-29T01:30:45.020Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270646-5pl6xnkvf",
+    "createdAt": "2026-04-29T01:31:10.646Z",
+    "updatedAt": "2026-04-29T01:31:10.646Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270651-l7lyjoscz",
+    "createdAt": "2026-04-29T01:31:10.651Z",
+    "updatedAt": "2026-04-29T01:31:10.651Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270653-e70qp7rwh",
+    "createdAt": "2026-04-29T01:31:10.653Z",
+    "updatedAt": "2026-04-29T01:31:10.653Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270656-0iqwq4zz8",
+    "createdAt": "2026-04-29T01:31:10.656Z",
+    "updatedAt": "2026-04-29T01:31:10.656Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270660-0ol12cl9y",
+    "createdAt": "2026-04-29T01:31:10.660Z",
+    "updatedAt": "2026-04-29T01:31:10.660Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270662-fkfdcj6mj",
+    "createdAt": "2026-04-29T01:31:10.662Z",
+    "updatedAt": "2026-04-29T01:31:10.662Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270672-2a1im0skn",
+    "createdAt": "2026-04-29T01:31:10.672Z",
+    "updatedAt": "2026-04-29T01:31:10.672Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270674-kzbu4mb4d",
+    "createdAt": "2026-04-29T01:31:10.674Z",
+    "updatedAt": "2026-04-29T01:31:10.674Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270678-yxjor32i7",
+    "createdAt": "2026-04-29T01:31:10.678Z",
+    "updatedAt": "2026-04-29T01:31:10.678Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426270684-jkk10kj04",
+    "createdAt": "2026-04-29T01:31:10.684Z",
+    "updatedAt": "2026-04-29T01:31:10.684Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297285-g7ka0241w",
+    "createdAt": "2026-04-29T01:31:37.285Z",
+    "updatedAt": "2026-04-29T01:31:37.285Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297290-mox9bpcmq",
+    "createdAt": "2026-04-29T01:31:37.290Z",
+    "updatedAt": "2026-04-29T01:31:37.290Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297292-zc2g4hsnu",
+    "createdAt": "2026-04-29T01:31:37.292Z",
+    "updatedAt": "2026-04-29T01:31:37.292Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297293-eiguvjwxy",
+    "createdAt": "2026-04-29T01:31:37.293Z",
+    "updatedAt": "2026-04-29T01:31:37.293Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297295-w2tpeq76k",
+    "createdAt": "2026-04-29T01:31:37.295Z",
+    "updatedAt": "2026-04-29T01:31:37.295Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297296-5nu5f31ab",
+    "createdAt": "2026-04-29T01:31:37.296Z",
+    "updatedAt": "2026-04-29T01:31:37.296Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297306-vzns9l4l0",
+    "createdAt": "2026-04-29T01:31:37.306Z",
+    "updatedAt": "2026-04-29T01:31:37.306Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297309-o1f4d3y5q",
+    "createdAt": "2026-04-29T01:31:37.309Z",
+    "updatedAt": "2026-04-29T01:31:37.309Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297313-icc6sx5aw",
+    "createdAt": "2026-04-29T01:31:37.313Z",
+    "updatedAt": "2026-04-29T01:31:37.313Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426297318-jha9gbpzw",
+    "createdAt": "2026-04-29T01:31:37.318Z",
+    "updatedAt": "2026-04-29T01:31:37.318Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426299974-kmjm278g5",
+    "createdAt": "2026-04-29T01:31:39.974Z",
+    "updatedAt": "2026-04-29T01:31:39.974Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426299978-zczdkitwl",
+    "createdAt": "2026-04-29T01:31:39.978Z",
+    "updatedAt": "2026-04-29T01:31:39.978Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426299980-3rl6t2at6",
+    "createdAt": "2026-04-29T01:31:39.980Z",
+    "updatedAt": "2026-04-29T01:31:39.980Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426299982-9gr7elcqs",
+    "createdAt": "2026-04-29T01:31:39.982Z",
+    "updatedAt": "2026-04-29T01:31:39.982Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426299984-zcazp64pl",
+    "createdAt": "2026-04-29T01:31:39.984Z",
+    "updatedAt": "2026-04-29T01:31:39.984Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426299985-3r9qyt6gr",
+    "createdAt": "2026-04-29T01:31:39.985Z",
+    "updatedAt": "2026-04-29T01:31:39.985Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426299994-wvghbm2ln",
+    "createdAt": "2026-04-29T01:31:39.994Z",
+    "updatedAt": "2026-04-29T01:31:39.994Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426299998-nqn16evrm",
+    "createdAt": "2026-04-29T01:31:39.998Z",
+    "updatedAt": "2026-04-29T01:31:39.998Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426300003-yz6ukgzgl",
+    "createdAt": "2026-04-29T01:31:40.003Z",
+    "updatedAt": "2026-04-29T01:31:40.003Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426300008-bn33fd3fd",
+    "createdAt": "2026-04-29T01:31:40.008Z",
+    "updatedAt": "2026-04-29T01:31:40.008Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312683-cujkpqeen",
+    "createdAt": "2026-04-29T01:31:52.683Z",
+    "updatedAt": "2026-04-29T01:31:52.683Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312688-d51tex5cc",
+    "createdAt": "2026-04-29T01:31:52.688Z",
+    "updatedAt": "2026-04-29T01:31:52.688Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312690-06eq7exon",
+    "createdAt": "2026-04-29T01:31:52.690Z",
+    "updatedAt": "2026-04-29T01:31:52.690Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312691-xtlugoe24",
+    "createdAt": "2026-04-29T01:31:52.691Z",
+    "updatedAt": "2026-04-29T01:31:52.691Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312693-vq65ldi5t",
+    "createdAt": "2026-04-29T01:31:52.693Z",
+    "updatedAt": "2026-04-29T01:31:52.693Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312695-6gety3dbp",
+    "createdAt": "2026-04-29T01:31:52.695Z",
+    "updatedAt": "2026-04-29T01:31:52.695Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312706-5n9s7g0dm",
+    "createdAt": "2026-04-29T01:31:52.706Z",
+    "updatedAt": "2026-04-29T01:31:52.706Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312709-hr393k5g5",
+    "createdAt": "2026-04-29T01:31:52.709Z",
+    "updatedAt": "2026-04-29T01:31:52.709Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312714-paia5namj",
+    "createdAt": "2026-04-29T01:31:52.714Z",
+    "updatedAt": "2026-04-29T01:31:52.714Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426312719-t8i56xtqu",
+    "createdAt": "2026-04-29T01:31:52.719Z",
+    "updatedAt": "2026-04-29T01:31:52.719Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473404-7bds8uoat",
+    "createdAt": "2026-04-29T01:34:33.404Z",
+    "updatedAt": "2026-04-29T01:34:33.404Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473416-3o9fn0zju",
+    "createdAt": "2026-04-29T01:34:33.416Z",
+    "updatedAt": "2026-04-29T01:34:33.416Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473419-4w20m9f0f",
+    "createdAt": "2026-04-29T01:34:33.419Z",
+    "updatedAt": "2026-04-29T01:34:33.419Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473423-gbhx4lfo2",
+    "createdAt": "2026-04-29T01:34:33.423Z",
+    "updatedAt": "2026-04-29T01:34:33.423Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473426-y7zrombjz",
+    "createdAt": "2026-04-29T01:34:33.426Z",
+    "updatedAt": "2026-04-29T01:34:33.426Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473428-jgh52bzid",
+    "createdAt": "2026-04-29T01:34:33.428Z",
+    "updatedAt": "2026-04-29T01:34:33.428Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473437-193dhi5oh",
+    "createdAt": "2026-04-29T01:34:33.437Z",
+    "updatedAt": "2026-04-29T01:34:33.437Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473440-goyg4c0sn",
+    "createdAt": "2026-04-29T01:34:33.440Z",
+    "updatedAt": "2026-04-29T01:34:33.440Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473445-7qxc24ppu",
+    "createdAt": "2026-04-29T01:34:33.445Z",
+    "updatedAt": "2026-04-29T01:34:33.445Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426473450-6odk0ot88",
+    "createdAt": "2026-04-29T01:34:33.450Z",
+    "updatedAt": "2026-04-29T01:34:33.450Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498454-ee28ae772",
+    "createdAt": "2026-04-29T01:34:58.454Z",
+    "updatedAt": "2026-04-29T01:34:58.454Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498458-uha4vibep",
+    "createdAt": "2026-04-29T01:34:58.458Z",
+    "updatedAt": "2026-04-29T01:34:58.458Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498460-kxcjctfvz",
+    "createdAt": "2026-04-29T01:34:58.460Z",
+    "updatedAt": "2026-04-29T01:34:58.460Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498462-zm69c5q2f",
+    "createdAt": "2026-04-29T01:34:58.462Z",
+    "updatedAt": "2026-04-29T01:34:58.462Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498464-qd7rnu7ta",
+    "createdAt": "2026-04-29T01:34:58.464Z",
+    "updatedAt": "2026-04-29T01:34:58.464Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498466-hgzgihi4l",
+    "createdAt": "2026-04-29T01:34:58.466Z",
+    "updatedAt": "2026-04-29T01:34:58.466Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498476-0dwn06gfx",
+    "createdAt": "2026-04-29T01:34:58.476Z",
+    "updatedAt": "2026-04-29T01:34:58.476Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498479-jmr2tfn18",
+    "createdAt": "2026-04-29T01:34:58.479Z",
+    "updatedAt": "2026-04-29T01:34:58.479Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498484-iqiphhx61",
+    "createdAt": "2026-04-29T01:34:58.484Z",
+    "updatedAt": "2026-04-29T01:34:58.484Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426498489-b1bvvs8xk",
+    "createdAt": "2026-04-29T01:34:58.489Z",
+    "updatedAt": "2026-04-29T01:34:58.489Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506822-dl6nh2xa1",
+    "createdAt": "2026-04-29T01:35:06.822Z",
+    "updatedAt": "2026-04-29T01:35:06.822Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506828-ybt6u8n46",
+    "createdAt": "2026-04-29T01:35:06.828Z",
+    "updatedAt": "2026-04-29T01:35:06.828Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506830-exjeoaopa",
+    "createdAt": "2026-04-29T01:35:06.830Z",
+    "updatedAt": "2026-04-29T01:35:06.830Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506832-aanu8rtvx",
+    "createdAt": "2026-04-29T01:35:06.832Z",
+    "updatedAt": "2026-04-29T01:35:06.832Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506834-joggkz780",
+    "createdAt": "2026-04-29T01:35:06.834Z",
+    "updatedAt": "2026-04-29T01:35:06.834Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506836-xzs30ugiv",
+    "createdAt": "2026-04-29T01:35:06.836Z",
+    "updatedAt": "2026-04-29T01:35:06.836Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506846-ysncj30ba",
+    "createdAt": "2026-04-29T01:35:06.846Z",
+    "updatedAt": "2026-04-29T01:35:06.846Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506850-5dh97p8zp",
+    "createdAt": "2026-04-29T01:35:06.850Z",
+    "updatedAt": "2026-04-29T01:35:06.850Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506855-jrzy1ty7g",
+    "createdAt": "2026-04-29T01:35:06.855Z",
+    "updatedAt": "2026-04-29T01:35:06.855Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426506860-h2ng33ix0",
+    "createdAt": "2026-04-29T01:35:06.860Z",
+    "updatedAt": "2026-04-29T01:35:06.860Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610024-oq1iv4o3z",
+    "createdAt": "2026-04-29T01:36:50.024Z",
+    "updatedAt": "2026-04-29T01:36:50.024Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610029-oxotukd2x",
+    "createdAt": "2026-04-29T01:36:50.029Z",
+    "updatedAt": "2026-04-29T01:36:50.029Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610031-tkqk1cwg4",
+    "createdAt": "2026-04-29T01:36:50.031Z",
+    "updatedAt": "2026-04-29T01:36:50.031Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610033-q3gfrppez",
+    "createdAt": "2026-04-29T01:36:50.033Z",
+    "updatedAt": "2026-04-29T01:36:50.033Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610036-halz6pcp3",
+    "createdAt": "2026-04-29T01:36:50.036Z",
+    "updatedAt": "2026-04-29T01:36:50.036Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610038-22arbjefy",
+    "createdAt": "2026-04-29T01:36:50.038Z",
+    "updatedAt": "2026-04-29T01:36:50.038Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610047-nid2ec2ya",
+    "createdAt": "2026-04-29T01:36:50.047Z",
+    "updatedAt": "2026-04-29T01:36:50.047Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610051-ynz12z0vz",
+    "createdAt": "2026-04-29T01:36:50.051Z",
+    "updatedAt": "2026-04-29T01:36:50.051Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610060-v5qw6gc8k",
+    "createdAt": "2026-04-29T01:36:50.060Z",
+    "updatedAt": "2026-04-29T01:36:50.060Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426610068-vz6m6cl8q",
+    "createdAt": "2026-04-29T01:36:50.068Z",
+    "updatedAt": "2026-04-29T01:36:50.068Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652856-eywzvexcd",
+    "createdAt": "2026-04-29T01:37:32.856Z",
+    "updatedAt": "2026-04-29T01:37:32.856Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652862-exq2uzzj9",
+    "createdAt": "2026-04-29T01:37:32.862Z",
+    "updatedAt": "2026-04-29T01:37:32.862Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652864-mky1nns0o",
+    "createdAt": "2026-04-29T01:37:32.864Z",
+    "updatedAt": "2026-04-29T01:37:32.864Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652866-y9cbr1td1",
+    "createdAt": "2026-04-29T01:37:32.866Z",
+    "updatedAt": "2026-04-29T01:37:32.866Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652868-kn0mab6cw",
+    "createdAt": "2026-04-29T01:37:32.868Z",
+    "updatedAt": "2026-04-29T01:37:32.868Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652870-bl15yrrks",
+    "createdAt": "2026-04-29T01:37:32.870Z",
+    "updatedAt": "2026-04-29T01:37:32.870Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652880-g4ardfmqc",
+    "createdAt": "2026-04-29T01:37:32.880Z",
+    "updatedAt": "2026-04-29T01:37:32.880Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652883-lv6hr3ufr",
+    "createdAt": "2026-04-29T01:37:32.883Z",
+    "updatedAt": "2026-04-29T01:37:32.883Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652888-2e8t2c6aw",
+    "createdAt": "2026-04-29T01:37:32.888Z",
+    "updatedAt": "2026-04-29T01:37:32.888Z",
+    "usageCount": 0
+  },
+  {
+    "name": "代码优化",
+    "description": "优化现有代码",
+    "category": "programming",
+    "tools": [
+      "code_optimization",
+      "code_review"
+    ],
+    "steps": [
+      "分析现有代码",
+      "根据需求进行优化",
+      "审查优化结果",
+      "返回优化后的代码"
+    ],
+    "examples": [
+      "测试任务：优化代码质量"
+    ],
+    "id": "skill-1777426652893-l3aio1h2z",
+    "createdAt": "2026-04-29T01:37:32.893Z",
+    "updatedAt": "2026-04-29T01:37:32.893Z",
+    "usageCount": 0
   }
 ]

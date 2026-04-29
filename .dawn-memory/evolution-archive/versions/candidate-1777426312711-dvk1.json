@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426312711-dvk1",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:31:52.711Z",
+  "description": "参数微调: 2026 → 1864; 参数微调: 2026 → 1828",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426312711-dvk1\",\"score\":65,\"description\":\"参数微调: 2026 → 1864; 参数微调: 2026 → 1828\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:31:52.711Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426312709"
+  }
+}

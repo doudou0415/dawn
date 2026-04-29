@@ -1,5 +1,6 @@
 // 会话生命周期模板方法模式
-import { logger } from '../utils/index.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('SessionTemplate');
 
 export abstract class SessionTemplate {
   // 模板方法 - 定义会话生命周期骨架

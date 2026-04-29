@@ -8,7 +8,8 @@
 import { EvolutionSandbox } from './sandbox/EvolutionSandbox';
 import { PerformanceEvaluator, type EvaluationInput, type EvaluationResult } from './evaluator/PerformanceEvaluator';
 import { CodeMutator, PromptMutator, WorkflowMutator } from './mutator';
-import { logger } from '../utils/index.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('SelfEvolutionEngine');
 import { EvolutionSelector, type SelectableCandidate } from './selector/EvolutionSelector';
 import { VersionArchivist, type VersionEntry, type DiffRecord } from './archivist/VersionArchivist';
 import { SkillGenerator, getSkillGenerator } from './skillGenerator';

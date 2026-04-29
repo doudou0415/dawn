@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426270666-qioy",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:31:10.666Z",
+  "description": "参数微调: 5000 → 5409; 参数微调: 2026 → 2052; 参数微调: 31 → 30; 参数微调: 660 → 716; 参数微调: 2026 → 2204",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426270666-qioy\",\"score\":65,\"description\":\"参数微调: 5000 → 5409; 参数微调: 2026 → 2052; 参数微调: 31 → 30; 参数微调: 660 → 716; 参数微调: 2026 → 2204\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:31:10.666Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426270660"
+  }
+}

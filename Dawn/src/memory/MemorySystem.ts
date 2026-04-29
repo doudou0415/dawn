@@ -13,7 +13,8 @@
 import { SessionMemory } from './layers/session/SessionMemory.js';
 import { PersistentMemory } from './layers/persistent/PersistentMemory.js';
 import { SkillMemory } from './layers/skill/SkillMemory.js';
-import { logger } from '../utils/index.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('MemorySystem');
 import { MemoryCompressor, DEFAULT_FORGETTING_CONFIGS } from './compressor/MemoryCompressor.js';
 import { ForgettingLevel, applyForgetting } from './compressor/ForgettingStrategy.js';
 import type { ForgettingConfig, ForgettingResult } from './compressor/ForgettingStrategy.js';
