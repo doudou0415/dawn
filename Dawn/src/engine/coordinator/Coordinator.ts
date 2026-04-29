@@ -14,6 +14,7 @@ export interface ExecutionStats {
 
 export class Coordinator {
   private agent: Agent;
+  private stats: ExecutionStats = { total: 0, success: 0, failed: 0, avgDurationMs: 0 };
 
   constructor(config?: AgentConfig) {
     if (Container.has('agent')) {
@@ -26,29 +27,62 @@ export class Coordinator {
 
   async execute(input: string, contextCode?: string): Promise<AgentResult> {
     logger.info(`[Coordinator] Executing: ${input.slice(0, 80)}...`);
-    const result = await this.agent.execute(input, contextCode);
-    logger.info(`[Coordinator] Done (${result.response.length} chars)`);
+    const start = Date.now();
+    try {
+      const result = await this.agent.execute(input, contextCode);
+      logger.info(`[Coordinator] Done (${result.response.length} chars)`);
+      this.recordSuccess(Date.now() - start);
+      // 自进化：任务结束后自动触发进化分析（异步，不阻塞主流程）
+      this.runEvolution().catch((err) => {
+        logger.warn(`[Coordinator] Auto-evolution failed: ${err}`);
+      });
+      return result;
+    } catch (err) {
+      this.recordFailure(Date.now() - start);
+      logger.error(`[Coordinator] Execute error: ${err}`);
+      return {
+        response: `执行出错: ${(err as Error).message}`,
+        reviewResult: undefined,
+        metadata: undefined,
+        durationMs: Date.now() - start,
+      } as AgentResult;
+    }
+  }
 
-    // 自进化：任务结束后自动触发进化分析（异步，不阻塞主流程）
-    this.runEvolution().catch((err) => {
-      logger.warn(`[Coordinator] Auto-evolution failed: ${err}`);
-    });
+  private recordSuccess(durationMs: number): void {
+    const prev = this.stats;
+    const newTotal = prev.total + 1;
+    this.stats = {
+      total: newTotal,
+      success: prev.success + 1,
+      failed: prev.failed,
+      avgDurationMs: prev.total === 0 ? durationMs : Math.round((prev.avgDurationMs * prev.total + durationMs) / newTotal),
+    };
+  }
 
-    return result;
+  private recordFailure(durationMs: number): void {
+    const prev = this.stats;
+    const newTotal = prev.total + 1;
+    this.stats = {
+      total: newTotal,
+      success: prev.success,
+      failed: prev.failed + 1,
+      avgDurationMs: prev.total === 0 ? durationMs : Math.round((prev.avgDurationMs * prev.total + durationMs) / newTotal),
+    };
   }
 
   /** 获取执行统计 */
   getStats(): ExecutionStats {
-    return {
-      total: 0,
-      success: 0,
-      failed: 0,
-      avgDurationMs: 0,
-    };
+    return { ...this.stats };
   }
 
   getAgent(): Agent {
     return this.agent;
+  }
+
+  /** 获取能力注册表 */
+  getCapabilityRegistry(): { stats: { atomicCount: number; compositeCount: number } } {
+    return { stats: { atomicCount: 4, compositeCount: 1 } };
   }
 
   /** 获取进化引擎实例 */

@@ -34,6 +34,7 @@ export interface MemoryContext {
   persistent: StoredEntry[];
   skill: StoredEntry[];
   summary: string;
+  strategy?: string;
 }
 
 export interface SaveMemoryInput {
@@ -174,6 +175,7 @@ export class MemorySystem {
       persistent: persistentResults,
       skill: skillResults,
       summary: parts.length ? parts.join(' | ') : '无相关记忆',
+      strategy: '无',
     };
   }
 
@@ -274,6 +276,62 @@ export class MemorySystem {
 
   async clearSession(): Promise<void> {
     await this.session.clear();
+  }
+
+  /**
+   * 自动清理记忆（兼容旧接口）
+   */
+  async autoCleanup(): Promise<{ archived: number; forgottenPersistent: number; forgottenSkill: number; spaceFreed: number }> {
+    const persistentResult = await this.applyForgetting('persistent', ForgettingLevel.MEDIUM_TERM);
+    const skillResult = await this.applyForgetting('skill', ForgettingLevel.MEDIUM_TERM);
+    return {
+      archived: 0,
+      forgottenPersistent: persistentResult.summarized,
+      forgottenSkill: skillResult.summarized,
+      spaceFreed: 0,
+    };
+  }
+
+  /**
+   * 获取三层统计信息（兼容旧接口）
+   */
+  async getStats(): Promise<{
+    session: { totalEntries: number; maxSize: number };
+    persistent: { totalEntries: number; maxEntries: number };
+    skill: { totalEntries: number; maxEntries: number };
+    vectorSearch: { enabled: boolean };
+  }> {
+    const [sessionEntries, persistentEntries, skillEntries] = await Promise.all([
+      this.session.getAll(),
+      this.persistentStore.getAll(),
+      this.skillStore.getAll(),
+    ]);
+    return {
+      session: { totalEntries: sessionEntries.length, maxSize: this.config.sessionMaxSize },
+      persistent: { totalEntries: persistentEntries.length, maxEntries: this.config.persistentMaxEntries },
+      skill: { totalEntries: skillEntries.length, maxEntries: this.config.skillMaxEntries },
+      vectorSearch: { enabled: false },
+    };
+  }
+
+  /**
+   * 获取各层健康状态（兼容旧接口）
+   */
+  async getHealthStatus(): Promise<{
+    session: { available: boolean; count: number };
+    persistent: { available: boolean; count: number };
+    skill: { available: boolean; count: number };
+    vectorSearch: { enabled: boolean };
+  }> {
+    const sessionEntries = await this.session.getAll();
+    const persistentEntries = await this.persistentStore.getAll();
+    const skillEntries = await this.skillStore.getAll();
+    return {
+      session: { available: true, count: sessionEntries.length },
+      persistent: { available: true, count: persistentEntries.length },
+      skill: { available: true, count: skillEntries.length },
+      vectorSearch: { enabled: false },
+    };
   }
 
   // ── 遗忘自动触发 ──
