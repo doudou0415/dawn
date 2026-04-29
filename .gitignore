@@ -3,6 +3,9 @@ DawnPanel/memory/
 DawnPanel/.dawn-memory/
 DawnPanel/target/
 
+# Dawn self-evolution artifacts
+.dawn-memory/
+
 # Environment
 .env
 .env.local
