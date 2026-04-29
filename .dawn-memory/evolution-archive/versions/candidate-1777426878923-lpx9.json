@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426878923-lpx9",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:41:18.923Z",
+  "description": "参数微调: 5000 → 4794; 参数微调: 2026 → 2036; 参数微调: 18 → 20",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426878923-lpx9\",\"score\":65,\"description\":\"参数微调: 5000 → 4794; 参数微调: 2026 → 2036; 参数微调: 18 → 20\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:41:18.923Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426878916"
+  }
+}

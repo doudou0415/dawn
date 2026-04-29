@@ -21,7 +21,9 @@ try {
 import { Coordinator as Orchestrator } from '../engine/coordinator/Coordinator.js';
 import { ToolRegistry, ReadTool, WriteTool, BashTool, SearchTool } from '../tools';
 import { createInterface } from 'node:readline/promises';
-import { setupGlobalErrorHandling, logger } from '../utils/index.js';
+import { setupGlobalErrorHandling } from '../utils/index.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('CLI');
 
 const VERSION = '1.0.0';
 

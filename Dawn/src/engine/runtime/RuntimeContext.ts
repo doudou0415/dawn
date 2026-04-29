@@ -1,4 +1,4 @@
-import type { AgentConfig, OrchestratorConfig } from '../../../packages/core/src/types.js';
+import type { AgentConfig, OrchestratorConfig } from '@dawn/core';
 import type { MemorySystem } from '../../memory/MemorySystem.js';
 
 export interface RuntimeOptions {

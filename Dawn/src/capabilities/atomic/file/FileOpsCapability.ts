@@ -2,12 +2,80 @@
  * FileOpsCapability — 文件操作能力
  * 读取、写入、编辑、删除、移动文件等。
  * 基于 Bun 的 file I/O，无外部依赖。
+ *
+ * 安全策略：
+ * - 沙箱路径限制：仅允许操作项目目录内的文件
+ * - 禁止操作敏感路径：.git、node_modules 根级等
  */
 
 import type { AtomicCapability, CapabilityInput } from '@dawn/core';
 import type { CapabilityResult } from '../../registry/types.js';
+import { resolve, normalize, relative } from 'path';
+import { getLogger } from '@dawn/core';
+
+const logger = getLogger('FileOpsCapability');
 
 type FileOpType = 'read' | 'write' | 'edit' | 'delete' | 'list' | 'info';
+
+/**
+ * 禁止操作的文件/目录模式
+ */
+const BLOCKED_PATTERNS = [
+  /[/\\]\.git[/\\]/,
+  /[/\\]node_modules[/\\]/,
+  /\.env$/,
+  /\.env\.local$/,
+  /credentials\./,
+  /\.ssh[/\\]/,
+];
+
+/**
+ * 项目根目录（工作目录，用于沙箱路径限制）
+ */
+function getProjectRoot(): string {
+  return process.cwd();
+}
+
+/**
+ * 检查路径是否在沙箱范围内
+ */
+function isPathInSandbox(targetPath: string): { safe: boolean; reason?: string } {
+  const projectRoot = getProjectRoot();
+  const resolved = resolve(projectRoot, targetPath);
+  const normalized = normalize(resolved);
+  const rel = relative(projectRoot, normalized);
+
+  // 路径必须在项目目录内（不能通过 .. 逃逸）
+  if (rel.startsWith('..') || (rel.length > 0 && !rel.startsWith('.'))) {
+    // 如果 relative 以 .. 开头，说明在项目目录外
+    const absPath = resolve(targetPath);
+    const absRel = relative(projectRoot, absPath);
+    if (absRel.startsWith('..')) {
+      return { safe: false, reason: `路径 "${targetPath}" 在项目目录外，已阻止` };
+    }
+  }
+
+  const forwardPath = normalized.replace(/\\/g, '/');
+
+  // 检查敏感模式
+  for (const pattern of BLOCKED_PATTERNS) {
+    if (pattern.test(forwardPath)) {
+      return { safe: false, reason: `路径匹配敏感模式: ${pattern}` };
+    }
+  }
+
+  return { safe: true };
+}
+
+function sanitizePath(rawPath: string): string {
+  const projectRoot = getProjectRoot();
+  const resolved = resolve(projectRoot, rawPath || '.');
+  return normalized(resolved);
+}
+
+function normalized(p: string): string {
+  return normalize(p);
+}
 
 export class FileOpsCapability implements AtomicCapability {
   readonly name = 'file_ops';
@@ -17,7 +85,20 @@ export class FileOpsCapability implements AtomicCapability {
 
   async execute(input: CapabilityInput): Promise<CapabilityResult> {
     const op = this.detectOperation((input as any).rawInput || '');
-    const filePath = this.extractPath((input as any).rawInput || '');
+    const rawPath = this.extractPath((input as any).rawInput || '');
+    const filePath = sanitizePath(rawPath);
+
+    // 安全检查
+    const sandboxCheck = isPathInSandbox(rawPath);
+    if (!sandboxCheck.safe) {
+      logger.warn(`文件操作被阻止: ${op} ${rawPath} — ${sandboxCheck.reason}`);
+      return {
+        success: false,
+        output: `[安全拦截] ${sandboxCheck.reason}`,
+        permissionsUsed: ['fs:read'],
+        metadata: { operation: op, path: rawPath, blocked: true },
+      };
+    }
 
     let result: any;
     switch (op) {
@@ -81,8 +162,6 @@ export class FileOpsCapability implements AtomicCapability {
   private async listDirectory(dirPath: string): Promise<unknown> {
     const targetPath = dirPath || '.';
     try {
-      const dir = Bun.file(targetPath);
-      // Bun.file 不支持 readdir，需要改用 fs
       const { readdir } = await import('node:fs/promises');
       const entries = await readdir(targetPath);
       return { success: true, path: targetPath, entries };
@@ -113,7 +192,6 @@ export class FileOpsCapability implements AtomicCapability {
 
   private async writeFile(filePath: string, rawInput: string): Promise<unknown> {
     if (!filePath) return { error: '未指定文件路径' };
-    // 从输入中提取要写入的内容（"写入 内容 到 路径"或"write 内容 to 路径"）
     const contentMatch = rawInput.match(/(?:写入|写|write|创建|create)\s*[:：]?\s*["'`]?([\s\S]*?)["'`]?\s*(?:到|至|to|@)\s*["'`]?(.+?)["'`]?\s*$/i);
     const content = (contentMatch ? contentMatch[1]?.trim() : '') ?? '';
     try {
@@ -135,7 +213,6 @@ export class FileOpsCapability implements AtomicCapability {
       const exists = await file.exists();
       if (!exists) return { error: `文件不存在: ${filePath}` };
       const currentContent = await readFile(filePath, 'utf-8');
-      // 从输入中提取替换模式（"将 old 替换为 new" 或 "replace old with new"）
       const replaceMatch = rawInput.match(/(?:将|把|replace)\s*["'`]?(.+?)["'`]?\s*(?:替换为|替换成|改为|改为|with|to)\s*["'`]?(.+?)["'`]?\s*(?:在|in|@)?\s*$/i);
       if (replaceMatch) {
         const oldStr = replaceMatch[1] ?? '';

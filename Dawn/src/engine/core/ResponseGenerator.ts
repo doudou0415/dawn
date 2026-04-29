@@ -1,6 +1,6 @@
 import { readFileSync, existsSync, writeFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
-import type { ReviewResult, EmotionResult, ConversationContext, ConversationMessage } from '../../../packages/core/src/types.js';
+import type { ReviewResult, EmotionResult, ConversationContext, ConversationMessage } from '@dawn/core';
 import type { EmotionDetector } from './EmotionDetector.js';
 
 class ResponseGenerator {

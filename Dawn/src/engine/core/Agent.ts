@@ -1,5 +1,6 @@
 import crypto from 'node:crypto';
 
+import { getLogger } from '@dawn/core';
 import type {
   AgentConfig,
   AgentResult,
@@ -8,18 +9,17 @@ import type {
   ConversationContext,
   ConversationMessage,
   EmotionResult,
-} from '../../../packages/core/src/types.js';
-import { DialogueStateType } from '../../../packages/core/src/types.js';
-import type { DialogueState } from '../../../packages/core/src/types.js';
+  DialogueState,
+  ReviewResult,
+} from '@dawn/core';
+import { DialogueStateType } from '@dawn/core';
 import { SelfEvolutionEngine } from '../../evolution/SelfEvolutionEngine.js';
 import { MemorySystem } from '../../memory/MemorySystem.js';
 import { EmotionDetector } from './EmotionDetector.js';
 import { ResponseGenerator } from './ResponseGenerator.js';
 import { HistoryManager } from './HistoryManager.js';
 import { ExecutionLoop } from './ExecutionLoop.js';
-import type { ReviewResult } from '../../../packages/core/src/types.js';
 import { SmartCodeReviewer } from './ExecutionLoop.js';
-import { getLogger } from '../../../packages/core/src/Logger.js';
 
 const log = getLogger('Agent');
 

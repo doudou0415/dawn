@@ -24,3 +24,9 @@ export {
 
 export type { LogSink } from './Logger.js';
 export { ConsoleSink, FileSink } from './Logger.js';
+
+// ── LLM 抽象层 ──
+export { getLLMProvider, resetLLMProvider, setLLMProvider } from './llm/LLMFactory.js';
+export { DeepSeekProvider } from './llm/DeepSeekProvider.js';
+export { LLMCache, getDefaultCache, resetDefaultCache } from './llm/LLMCache.js';
+export type { LLMProvider, ChatOptions, ChatResponse, Chunk } from './llm/LLMProvider.js';

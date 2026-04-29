@@ -1,4 +1,4 @@
-import type { EmotionResult } from '../../../packages/core/src/types.js';
+import type { EmotionResult } from '@dawn/core';
 
 class EmotionDetector {
   private positiveKeywords = ['好', '棒', '赞', '谢谢', '厉害', '完美', '喜欢', '棒棒哒', '优秀', '出色'];

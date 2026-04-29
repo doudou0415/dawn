@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777413673416-5iyl",
+  "parentVersionId": null,
+  "timestamp": "2026-04-28T22:01:13.416Z",
+  "description": "参数微调: 1 → 1",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777413673416-5iyl\",\"score\":65,\"description\":\"参数微调: 1 → 1\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-28T22:01:13.416Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777413673412"
+  }
+}

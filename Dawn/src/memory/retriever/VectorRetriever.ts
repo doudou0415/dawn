@@ -14,8 +14,9 @@
  *   OLLAMA_EMBED_MODEL=nomic-embed-text — 嵌入模型
  */
 
+import { getLogger } from '@dawn/core';
+const logger = getLogger('VectorRetriever');
 import type { StoredEntry } from '../store/MemoryStore.js';
-import { logger } from '../../utils/index.js';
 
 // ── 类型定义 ──
 

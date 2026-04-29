@@ -14,7 +14,8 @@ const SEARCH_ENGINES = [
   { name: 'google', url: (q: string) => `https://www.google.com/search?q=${encodeURIComponent(q)}&hl=en` },
 ];
 
-import { logger } from '../../../utils/index.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('HumanBrowser');
 
 export interface SearchResult {
   title: string;

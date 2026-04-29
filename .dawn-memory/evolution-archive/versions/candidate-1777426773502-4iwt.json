@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426773502-4iwt",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:39:33.502Z",
+  "description": "无有效变异（低于变异阈值）",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426773502-4iwt\",\"score\":65,\"description\":\"无有效变异（低于变异阈值）\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:39:33.502Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426773500"
+  }
+}

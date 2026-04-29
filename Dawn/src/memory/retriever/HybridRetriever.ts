@@ -13,12 +13,9 @@
  * @see VectorRetriever — Ollama embedding + cosine 相似度
  */
 
+import { getLogger } from '@dawn/core';
+const logger = getLogger('HybridRetriever');
 import type { StoredEntry, IMemoryStore } from '../store/MemoryStore.js';
-import { SessionMemory } from '../layers/session/SessionMemory.js';
-import { PersistentMemory } from '../layers/persistent/PersistentMemory.js';
-import { SkillMemory } from '../layers/skill/SkillMemory.js';
-import { calculateImportance } from '../compressor/ForgettingStrategy.js';
-import { logger } from '../../utils/index.js';
 import { VectorRetriever, isVectorSearchEnabled } from './VectorRetriever.js';
 
 export interface RetrievalOptions {

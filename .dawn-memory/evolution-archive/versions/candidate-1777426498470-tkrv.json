@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426498470-tkrv",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:34:58.470Z",
+  "description": "参数微调: 5000 → 4682; 参数微调: 34 → 34; 参数微调: 58 → 58",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426498470-tkrv\",\"score\":65,\"description\":\"参数微调: 5000 → 4682; 参数微调: 34 → 34; 参数微调: 58 → 58\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:34:58.470Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426498464"
+  }
+}

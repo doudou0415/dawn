@@ -6,8 +6,9 @@
  */
 
 import { Coordinator as Orchestrator } from './engine/coordinator/Coordinator.js';
-import type { OrchestratorConfig } from '../packages/core/src/types.js';
-import { logger } from './utils/index.js';
+import type { OrchestratorConfig } from '@dawn/core';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('Main');
 
 function checkApiKey(): void {
   const key = (typeof Bun !== 'undefined' ? Bun.env.DEEPSEEK_API_KEY : '') || process.env.DEEPSEEK_API_KEY || '';
@@ -79,7 +80,7 @@ async function replMode() {
     try {
       const result = await orchestrator.execute(input);
       const elapsed = Date.now() - start;
-      console.log(`\n${result.response}`);
+      logger.info(`\n${result.response}`);
       logger.info(`[完成] ${elapsed}ms`);
     } catch (e: any) {
       logger.error('任务执行错误: ' + (e.message || String(e)));
@@ -102,7 +103,7 @@ async function main() {
   // 单次任务模式
   const task = args.join(' ');
   const result = await runFullTask(task);
-  console.log(result);
+  logger.info(String(result));
   process.exit(0);
 }
 

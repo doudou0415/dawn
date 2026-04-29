@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426245012-pjwl",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:30:45.012Z",
+  "description": "参数微调: 11 → 12",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426245012-pjwl\",\"score\":65,\"description\":\"参数微调: 11 → 12\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:30:45.012Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426245011"
+  }
+}

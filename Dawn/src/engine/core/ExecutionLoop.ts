@@ -1,5 +1,6 @@
 import crypto from 'node:crypto';
 
+import { getLogger, DialogueStateType, TaskCategory } from '@dawn/core';
 import type {
   AgentConfig,
   AgentResult,
@@ -8,8 +9,7 @@ import type {
   ReviewResult,
   ToolCall,
   ToolPerformance,
-} from '../../../packages/core/src/types.js';
-import { DialogueStateType, TaskCategory } from '../../../packages/core/src/types.js';
+} from '@dawn/core';
 import { callDeepSeek, SYSTEM_PROMPT } from './LLMProvider.js';
 import { EmotionDetector } from './EmotionDetector.js';
 import { ResponseGenerator } from './ResponseGenerator.js';
@@ -17,7 +17,6 @@ import { HistoryManager } from './HistoryManager.js';
 import { SelfEvolutionEngine } from '../../evolution/SelfEvolutionEngine.js';
 import { MemorySystem } from '../../memory/MemorySystem.js';
 import { looksLikeToolTask } from '../intent/IntentEngine.js';
-import { getLogger } from '../../../packages/core/src/Logger.js';
 
 const log = getLogger('ExecutionLoop');
 
@@ -179,7 +178,7 @@ export class ExecutionLoop {
         }
         // 保存执行记录到记忆系统
         if (this.memorySystem) {
-          const { TaskCategory } = await import('../../../packages/core/src/types.js');
+          const { TaskCategory } = await import('@dawn/core');
           this.memorySystem
             .recordExecution({
               task: trimmedTask,
@@ -203,7 +202,7 @@ export class ExecutionLoop {
       }
       // 保存执行记录到记忆系统
       if (this.memorySystem) {
-        const { TaskCategory } = await import('../../../packages/core/src/types.js');
+        const { TaskCategory } = await import('@dawn/core');
         this.memorySystem
           .recordExecution({
             task: trimmedTask,
@@ -317,7 +316,7 @@ export class ExecutionLoop {
         this.toolsUsed.push('code_generation');
 
         if (this.memorySystem) {
-          const { TaskCategory } = await import('../../../packages/core/src/types.js');
+          const { TaskCategory } = await import('@dawn/core');
           this.memorySystem
             .recordExecution({
               task: trimmedTask,

@@ -1,0 +1,18 @@
+{
+  "versionId": "candidate-1777426652874-4df5",
+  "parentVersionId": null,
+  "timestamp": "2026-04-29T01:37:32.874Z",
+  "description": "添加变异标记注释",
+  "candidateType": "code",
+  "sourcePath": "测试任务：优化代码质量",
+  "content": "{\"id\":\"candidate-1777426652874-4df5\",\"score\":65,\"description\":\"添加变异标记注释\",\"type\":\"code\",\"tags\":[\"optimization\",\"code_quality\",\"code\"],\"createdAt\":\"2026-04-29T01:37:32.874Z\"}",
+  "score": 65,
+  "tags": [
+    "optimization",
+    "code_quality",
+    "code"
+  ],
+  "metadata": {
+    "taskId": "task-1777426652868"
+  }
+}

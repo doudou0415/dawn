@@ -1,7 +1,6 @@
+import { getLogger } from '@dawn/core'
+const logger = getLogger('CodeReview')
 import * as ts from 'typescript'
-import * as fs from 'fs'
-import * as path from 'path'
-import { logger } from '../../../utils/index.js'
 
 export interface CodeIssue {
   type: 'security' | 'performance' | 'best-practice' | 'bug'

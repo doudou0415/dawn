@@ -1,7 +1,8 @@
 import { ToolDefinition } from './ToolRegistry';
 import { readdir, readFile, stat } from 'node:fs/promises';
 import { join, relative } from 'node:path';
-import { logger } from '../utils/index.js';
+import { getLogger } from '@dawn/core';
+const logger = getLogger('SearchTool');
 
 export const SearchTool: ToolDefinition = {
   name: 'search',

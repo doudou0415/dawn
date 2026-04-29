@@ -10,9 +10,9 @@
  * 参考 MCP 规范：https://spec.modelcontextprotocol.io/
  */
 
+import { getLogger } from '@dawn/core';
+const logger = getLogger('MCPClient');
 import { spawn, type ChildProcess } from 'node:child_process';
-import { EventEmitter } from 'node:events';
-import { logger } from '../../utils/index.js';
 import type {
   MCPServerConfig,
   MCPToolDefinition,
