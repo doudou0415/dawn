@@ -1,5 +1,52 @@
 # Changelog
 
+## [2.0.0] — 2026-04-29
+
+### 架构升级
+
+- **LLM 抽象层**：引入 `LLMProvider` 标准接口 + `DeepSeekProvider` + `LLMFactory` 工厂模式，支持运行时切换 Provider
+- **上下文感知**：`ContextService` 支持 `@file`、`@folder`、`@git` 引用注入，集成 git diff 感知
+- **工具调用缓存**：`LLMCache` 实现 LRU + TTL 缓存，减少重复 LLM 调用
+
+### 工程化
+
+- **测试覆盖**：从 165 → 209 个测试，新增 Coordinator 分支、MemorySystem 归档、EvolutionSandbox 边界、CompactService 集成测试
+- **Monorepo 完善**：统一 `@dawn/*` 别名，更新 `tsconfig.json` 和 `vitest.config.ts`
+- **Scripts 补充**：新增 `lint`、`lint:fix`、`test:ci`、`build`（tsc）
+
+### 安全性
+
+- **终端安全**：危险命令白名单（rm -rf / curl / wget / sudo 等阻止），输出大小限制 1MB，超时 10s
+- **文件沙箱**：沙箱路径限制（仅项目目录内），敏感路径（.git / node_modules / .env）阻止
+- **URL 安全**：仅允许 http/https 协议，禁止内网地址
+- **输入验证**：注入检测、长度限制、空输入保护
+
+### 可观测性
+
+- **请求追踪**：每个请求生成 `requestId`，贯穿日志
+- **Token 统计**：估算 prompt/completion token 用量
+- **能力计数**：记录各能力调用次数
+- **进化记录**：跟踪进化效果
+
+### 日志系统
+
+- 所有模块统一使用 `import { getLogger } from '@dawn/core'`
+- `utils/index.ts` 原 logger 标记 `@deprecated`
+- 代码级 `console.` 调用清零
+
+### 导入规范
+
+- 所有 `packages/core` 的相对导入替换为 `@dawn/core` 别名
+- 配置文件 paths 映射完善
+
+### 文档
+
+- 新增 `ARCHITECTURE.md`（完整架构描述 + Coordinator 流程图）
+- 更新 `README.md`（v2.0 特性、安装、配置）
+- 更新 `CHANGELOG.md`（v2.0 变更记录）
+
+---
+
 ## [1.0.0] — 2026-04-26
 
 ### Phase 6: 测试体系 + 清理优化 + 文档发布
